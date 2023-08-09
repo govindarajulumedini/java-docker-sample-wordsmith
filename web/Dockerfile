@@ -5,7 +5,7 @@ COPY dispatcher.go .
 RUN go build dispatcher.go
 
 # RUN
-FROM alpine
+FROM alpine:3.18.3
 
 EXPOSE 80
 CMD ["/dispatcher"]
